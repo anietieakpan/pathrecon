@@ -1,0 +1,9 @@
+{
+    "0": {
+        "make": "Acura",
+        "model": "ILX",
+        "year": 2013,
+        "type": "Sedan"
+    },
+    // ... more labels
+}

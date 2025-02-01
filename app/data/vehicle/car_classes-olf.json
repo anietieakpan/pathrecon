@@ -1,0 +1,340 @@
+
+{
+  "makes": {
+    "0": "Acura",
+    "1": "Audi",
+    "2": "BMW",
+    "3": "Buick",
+    "4": "Cadillac",
+    "5": "Chevrolet",
+    "6": "Chrysler",
+    "7": "Dodge",
+    "8": "Ferrari",
+    "9": "Ford",
+    "10": "Honda",
+    "11": "Hyundai",
+    "12": "Infiniti",
+    "13": "Jaguar",
+    "14": "Jeep",
+    "15": "Kia",
+    "16": "Lamborghini",
+    "17": "Land Rover",
+    "18": "Lexus",
+    "19": "Lincoln",
+    "20": "Maserati",
+    "21": "Mazda",
+    "22": "Mercedes-Benz",
+    "23": "Mini",
+    "24": "Mitsubishi",
+    "25": "Nissan",
+    "26": "Porsche",
+    "27": "Ram",
+    "28": "Subaru",
+    "29": "Tesla",
+    "30": "Toyota",
+    "31": "Volkswagen",
+    "32": "Volvo"
+  },
+  "models": {
+    "0": {
+      "make": "Acura",
+      "model": "ILX",
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Sedan"
+    },
+    "1": {
+      "make": "Acura",
+      "model": "MDX",
+      "years": [
+        2014,
+        2015,
+        2016
+      ],
+      "type": "SUV"
+    },
+    "2": {
+      "make": "Acura",
+      "model": "RDX",
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "type": "SUV"
+    },
+    "3": {
+      "make": "Acura",
+      "model": "RLX",
+      "years": [
+        2014,
+        2015
+      ],
+      "type": "Sedan"
+    },
+    "4": {
+      "make": "Acura",
+      "model": "TL",
+      "years": [
+        2012,
+        2013,
+        2014
+      ],
+      "type": "Sedan"
+    },
+    "5": {
+      "make": "Acura",
+      "model": "TLX",
+      "years": [
+        2015,
+        2016
+      ],
+      "type": "Sedan"
+    },
+    "6": {
+      "make": "Audi",
+      "model": "A3",
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Sedan"
+    },
+    "7": {
+      "make": "Audi",
+      "model": "A4",
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Sedan"
+    },
+    "8": {
+      "make": "Audi",
+      "model": "A5",
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Coupe"
+    },
+    "9": {
+      "make": "Audi",
+      "model": "A6",
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Sedan"
+    },
+    "10": {
+      "make": "Audi",
+      "model": "A7",
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Sedan"
+    },
+    "11": {
+      "make": "Audi",
+      "model": "A8",
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Sedan"
+    },
+    "12": {
+      "make": "Audi",
+      "model": "Q3",
+      "years": [
+        2015,
+        2016
+      ],
+      "type": "SUV"
+    },
+    "13": {
+      "make": "Audi",
+      "model": "Q5",
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "type": "SUV"
+    },
+    "14": {
+      "make": "Audi",
+      "model": "Q7",
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "type": "SUV"
+    },
+    "15": {
+      "make": "BMW",
+      "model": "1 Series",
+      "years": [
+        2012,
+        2013
+      ],
+      "type": "Coupe"
+    },
+    "16": {
+      "make": "BMW",
+      "model": "2 Series",
+      "years": [
+        2014,
+        2015
+      ],
+      "type": "Coupe"
+    },
+    "17": {
+      "make": "BMW",
+      "model": "3 Series",
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Sedan"
+    },
+    "18": {
+      "make": "BMW",
+      "model": "4 Series",
+      "years": [
+        2014,
+        2015
+      ],
+      "type": "Coupe"
+    },
+    "19": {
+      "make": "BMW",
+      "model": "5 Series",
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Sedan"
+    },
+    "20": {
+      "make": "BMW",
+      "model": "6 Series",
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Coupe"
+    },
+    "21": {
+      "make": "BMW",
+      "model": "7 Series",
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "type": "Sedan"
+    },
+    "22": {
+      "make": "BMW",
+      "model": "X1",
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "type": "SUV"
+    },
+    "23": {
+      "make": "BMW",
+      "model": "X3",
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "type": "SUV"
+    },
+    "24": {
+      "make": "BMW",
+      "model": "X4",
+      "years": [
+        2015,
+        2016
+      ],
+      "type": "SUV"
+    },
+    "25": {
+      "make": "BMW",
+      "model": "X5",
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "type": "SUV"
+    },
+    "26": {
+      "make": "BMW",
+      "model": "X6",
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "type": "SUV"
+    }
+    // ... Additional models will be added based on CompCars dataset
+  },
+  "types": {
+    "0": "Sedan",
+    "1": "SUV",
+    "2": "Coupe",
+    "3": "Convertible",
+    "4": "Wagon",
+    "5": "Van",
+    "6": "Truck"
+  },
+  "years": {
+    "min_year": 2000,
+    "max_year": 2016,
+    "ranges": {
+      "0": "2000-2005",
+      "1": "2006-2010",
+      "2": "2011-2013",
+      "3": "2014-2016"
+    }
+  },
+  "metadata": {
+    "total_makes": 33,
+    "total_models": 431,
+    "total_types": 7,
+    "dataset_version": "CompCars Web Nature 2015",
+    "last_updated": "2024-01-14"
+  }
+}

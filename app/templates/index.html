@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Plate Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <h1>License Plate Detection</h1>
+
+    <div class="container">
+        <div class="main-content">
+            <!-- Video Upload and Processing -->
+            <div id="video-upload">
+                <h2>Upload Video</h2>
+                <input type="file" id="video-input" accept="video/*">
+                <button onclick="uploadVideo()">Upload Video</button>
+            </div>
+
+            <!-- Video Controls -->
+            <div class="controls">
+                <button onclick="startVideo()">Start Video</button>
+                <button onclick="stopVideo()">Stop Video</button>
+                <button onclick="refreshPlates()">Refresh Detected Plates</button>
+            </div>
+
+            <!-- Camera Controls -->
+            <div class="controls">
+                <button onclick="startCamera()">Start Camera</button>
+                <button onclick="stopCamera()">Stop Camera</button>
+            </div>
+
+            <!-- Video Display -->
+            <div id="video-container">
+                <img id="video-feed" src="" alt="Video Stream">
+            </div>
+
+            <!-- Image Upload and Processing -->
+            <div id="image-upload">
+                <h2>Upload Image</h2>
+                <input type="file" id="image-input" accept="image/*">
+                <button onclick="processImage()">Process Image</button>
+            </div>
+
+            <!-- Image Display -->
+            <div id="image-container">
+                <img id="processed-image" src="" alt="Processed Image">
+            </div>
+
+            <!-- Configuration Form -->
+            <div id="config-form">
+                <h2>Detection Configuration</h2>
+                <div>
+                    <label for="frame-skip">Frame Skip:</label>
+                    <input type="number" id="frame-skip" min="1" max="10">
+                </div>
+
+                <div>
+                    <label for="resize-width">Resize Width:</label>
+                    <input type="number" id="resize-width" min="100" max="1920">
+                </div>
+
+                <div>
+                    <label for="resize-height">Resize Height:</label>
+                    <input type="number" id="resize-height" min="100" max="1080">
+                </div>
+
+                <div>
+                    <label for="confidence-threshold">Confidence Threshold:</label>
+                    <input type="number" id="confidence-threshold" min="0" max="1" step="0.1">
+                </div>
+
+                <div>
+                    <label for="max-detections">Max Detections per Frame:</label>
+                    <input type="number" id="max-detections" min="1" max="10">
+                </div>
+
+                <div>
+                    <label for="process-interval">Process Interval (seconds):</label>
+                    <input type="number" id="process-interval" min="0.1" max="10" step="0.1">
+                </div>
+
+                <button onclick="updateConfig()">Update Configuration</button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <!-- Vehicle Search -->
+            <div class="vehicle-search">
+                <h2>Vehicle Search</h2>
+                <select id="make-select" onchange="updateModels()">
+                    <option value="">Select Make</option>
+                </select>
+                <select id="model-select">
+                    <option value="">Select Model</option>
+                </select>
+                <select id="color-select">
+                    <option value="">Select Color</option>
+                </select>
+                <button onclick="searchVehicles()">Search</button>
+            </div>
+
+            <!-- Detections List -->
+            <div id="plates-list">
+                <h2>Detected Plates</h2>
+                <ul id="plates-ul"></ul>
+            </div>
+
+            <!-- Database Info -->
+            <div id="db-info"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/application.js') }}"></script>
+</body>
+
+</html>

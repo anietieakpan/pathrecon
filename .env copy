@@ -1,0 +1,58 @@
+# .env
+import os
+
+    # Flask Configuration
+    SECRET_KEY = 'you-will-never-guess'
+    UPLOAD_FOLDER = 'uploads'
+    MAX_CONTENT_LENGTH = 104857600 #100 * 1024 * 1024  # 100 MB limit
+
+    
+    # InfluxDB configuration
+    INFLUXDB_URL = 'http://localhost:8086'
+    INFLUXDB_TOKEN = '1boLA7YZq6dvUrc2Mlomus7dAJawm3ZbskadawaS1g5gb65fISVYNbUuVJ05cWhuiIDvKsw94UU-35fP5xHZaA=='
+    INFLUXDB_ORG = 'ketu-ai'
+    INFLUXDB_BUCKET = 'license_plate_detections'
+
+    # SQLAlchemy configuration
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+        'sqlite:///' + os.path.join(os.path.abspath(os.path.dirname(__file__)), 'app.db')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    # SQLALCHEMY_DATABASE_URI = 'sqlite:///your_database.db'  #
+
+    
+    # Detection configuration
+    FRAME_SKIP = 2
+    RESIZE_WIDTH = 640
+    RESIZE_HEIGHT = 480
+    CONFIDENCE_THRESHOLD = 0.5
+    MAX_DETECTIONS_PER_FRAME = 5
+    PROCESS_EVERY_N_SECONDS = 1 
+
+
+    # SQLAlchemy Configuration
+    # SQLALCHEMY_DATABASE_URI=postgresql://license_plate_user:your_secure_password@localhost:5432/license_plate_analysis
+    SQLALCHEMY_TRACK_MODIFICATIONS=False
+    SQLALCHEMY_ECHO=True  # Set to False in production
+    SQLALCHEMY_POOL_SIZE=5
+    SQLALCHEMY_MAX_OVERFLOW=10
+    SQLALCHEMY_POOL_TIMEOUT=30
+
+    
+    
+    # PostgreSQL Analysis Database Configuration
+    POSTGRES_USER = 'license_plate_user'
+    POSTGRES_PASSWORD = 'seelering'
+    POSTGRES_HOST = 'localhost'
+    POSTGRES_PORT = '5432'
+    POSTGRES_DB = 'license_plate_analysis'
+    
+    # SQLAlchemy URL for PostgreSQL
+    # POSTGRES_DATABASE_URI = (
+    #     f'postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@'
+    #     f'{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}'
+    # )
+
+
+
+    
+    
